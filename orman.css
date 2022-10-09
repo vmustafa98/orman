@@ -1,0 +1,226 @@
+*{margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+font-family: 'Silkscreen', cursive;}
+
+a{display: inline-block;
+    text-decoration: none;}
+li{list-style: none; display: inline-block;}
+.container1{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: radial-gradient(circle, rgba(0,35,36,1) 0%, rgba(21,139,16,0.3) 56%, rgba(7,18,25,0.846673703661152) 100%),url(arkaorman.jpg);
+    background-position: center;
+    background-size:cover;
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 4fr 4fr; 
+      column-gap:10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+.item{ width: 100%; 
+    margin: 20px;
+    position: relative;
+ 
+}
+
+
+.item:first-child{grid-area: 1 / 1 / span 1 / span 3 ;}
+.item:nth-child(2){grid-row: 2 / span 2 ;}
+
+.item:nth-child(3){grid-column: 2 / span 2;}
+.item:nth-child(3){grid-row: 2 / span 2;}
+
+
+.header {display: flex;
+   margin-top: 0px; 
+justify-content: space-around;
+align-items: center;
+    background: linear-gradient(13deg, rgba(0,35,36,0.8) 0%, rgba(31,193,38,0.8) 58%, rgba(7,18,25,0.846673703661152) 100%);
+    border-radius: 50px;
+
+   position: fixed;
+    z-index: 50;
+  animation-name: examples;
+  animation-duration: 1s;  
+  animation-fill-mode: forwards;}
+@keyframes examples {
+  from { top: -50px;}
+  to {top: 0px; }
+}
+
+.container1:hover .anasayfa{
+    border-width: auto;
+    border: 1px solid;
+    border-color: linear-gradient rgba(225, 111, 25,0.9);
+border-radius: 50px;
+background-color:rgba(225, 111, 25,0.9);
+    box-shadow: 1px 3px 4px 7px rgba(0,0,0,0.62);}
+
+
+
+
+
+.logo img{width: 150px;
+height: 10vh;
+align-items: center;
+}
+
+.menu{text-transform: uppercase;
+   }
+
+.menu ul li{padding: 20px;
+box-sizing: border-box;}
+.menu ul li a{font-size: 20px;
+       padding: 10px;
+    color: #fff;
+    
+}
+.menu ul li a:hover{
+    border-width: auto;
+    border: 1px solid;
+ 
+    border-color: linear-gradient rgba(225, 111, 25,0.9);
+border-radius: 50px;
+background-color:rgba(225, 111, 25,0.9);
+    box-shadow: 1px 3px 4px 7px rgba(0,0,0,0.62);}
+text-transform: uppercase;}
+.menu ul:hover{border-width: auto;
+    border: 1px solid;
+    border-color: linear-gradient rgba(225, 111, 25,0.9);
+border-radius: 50px;
+background-color:rgba(225, 111, 25,0.9);}
+
+
+
+.search input{padding: 10px 10px; 
+    width: 100px;
+    height: 40px;
+    background:#fff;
+    color:#338c26;
+    border: none;
+    border-radius: 10px;
+font-size: 20px; 
+cursor: pointer;
+text-transform: lowercase;
+}
+
+.search input::placeholder {color: #338c26;
+text-transform: lowercase;}
+
+.ani1 img{width: 300px;
+  height: 200px;
+  
+}
+
+.ani1 img{  position: relative;
+  animation-name: mese;
+display: inline-block;
+    animation-delay: 1s;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;}
+@keyframes mese {
+  from {left:0px;}
+  to {left:200px; }}
+
+.mese a{position: absolute;
+top:60px;
+left:60px;
+color: white;
+font-size: 40px;
+font-family: 'Silkscreen', cursive;
+padding: 0 10px;}
+
+.mese a:hover{border-width: auto;
+    border: 1px solid;
+    border-color: linear-gradient rgba(225, 111, 25,0.9);
+border-radius: 50px;
+background-color:rgba(225, 111, 25,0.9);
+box-shadow: 10px 6px 14px 17px rgba(0,0,0,0.62);}
+
+
+
+.agac-kutusu2{margin-top: 50px;}
+
+.ani2 img{display: inline-block;
+position: relative;
+animation-name: kizilcam;
+display: inline-block;
+    animation-delay: 1s;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;}
+@keyframes kizilcam {
+  from {left:0px;}
+  to {left:250px; }}
+
+.kizilcam a{position: absolute;
+top:350px;
+left:25px;
+color: white;
+font-size: 40px;
+font-family: 'Silkscreen', cursive;
+padding: 0 10px;}
+
+.kizilcam a:hover{border-width: auto;
+    border: 1px solid;
+    border-color: linear-gradient rgba(225, 111, 25,0.9);
+border-radius: 50px;
+background-color:rgba(225, 111, 25,0.9);
+box-shadow: 10px 6px 14px 17px rgba(0,0,0,0.62);}
+
+.maki {display:flex;
+justify-content: center;
+align-content: flex-start;
+}
+
+.maki img{width: 100px;} 
+
+.maki h1{display: flex;
+    color: white;
+   
+align-items:center;}
+.maki h1 a {color: white;
+    margin: 10px;
+ }
+.maki h1 a:hover {background-color:rgba(225, 111, 25,0.9); 
+border-radius: 50px;
+border: 1px solid white;
+padding: 10px;
+box-shadow: 10px 6px 14px 17px rgba(0,0,0,0.62); }
+
+
+.jungle {display: flex;
+justify-content: center;
+}
+
+
+
+.jungle img{border-radius: 50px;
+border: 5px solid rgba(225, 111, 25,0.9);
+ position: relative;
+  animation-name: jungle;
+  animation-duration: 6s;
+  animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+
+}
+.jungle img:hover{
+ animation-play-state: paused; 
+}
+@keyframes jungle {
+  0%  {left:0px; top:0px;}
+  33.333% {left:100px; top:px;}
+  66.666% {left:-100px; top:px;}  
+  100% {left:0px; top:0px;}
+
+.jungle img:hover{
+ animation-play-state: paused; }
+
+    
+/* container2 */
+
+
+
